@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&display=swap');
+
+
+/*-- Structure --*/
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  background-image: url('../images/gem-plate-lt2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+
+main {
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 0;
+}
+
+/*-- Mobile --*/
+header {
+  margin-top: 0;
+  height: 130px;
+}
+
+header h1 {
+  margin-top: 0;
+  padding-top: 40px;
+  font-size: 40px;
+}
+
+/*-- Search Fieldset --*/
+#search-container {
+  height: 275px;
+}
+
+fieldset h2 {
+  margin-top: 40px;
+}
+
+form {
+  background-color: black;
+}
+
+/*--Carousel Styling--*/
+.carousel-inner {
+  max-height: 20rem;
+}
+
+.btm-margin {
+  margin-bottom: 40px
+}
+
+.hidden {
+  display: none;
+}
+/* --Map Display-- */
+
+#description-container button,
+.card-body,
+p {
+  font-size: 25px;
+  font-family: 'Quicksand', cursive;
+}
+
+/*--Footer--*/
+#footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 6.5rem;            /* Footer height */
+}
+
+footer p {
+  font-size: 15px;
+  padding-top: 25px;
+  margin: 0;
+}
+
+.legend-label,
+h3 {
+  font-family: 'Quicksand', cursive;
+}
+
+#form-container,
+#description-container {
+  width: 80%;
+  margin: auto;
+}
+
+body,
+header,
+footer p {
+  font-family: 'Pacifico', cursive;
+}
+
+footer,
+header {
+  width: 100%;
+  background-color: white;
+}
+
+header h1,
+h3,
+.legend-label,
+p
+ {
+  color: tomato;
+}
+
+#map {
+  border: 3px;
+  width: 100%;  /* The width is the width of the web page */
+}
+
+/*-- Desktop --*/
+@media all and (min-width: 300px) {
+  .wrapper {
+    margin: auto;
+    padding: 20px 40px 20px 40px;
+  }
+
+  #autocomplete {
+    width: 400px;
+  }
+
+  #map { 
+    height: 400px;
+    background-color: grey;
+  }
+  
+}
